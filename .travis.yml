@@ -6,4 +6,4 @@ services:
     - docker build -t tdubb123/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true tdubb123/docker-react npm run test
+  - docker run tdubb123/docker-react npm run test -- --coverage
